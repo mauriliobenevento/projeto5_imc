@@ -52,12 +52,12 @@ if st.button("Calular"):
         }
 
 
-    st.code(f"O resultado é {resultado}")
+    st.write(f"O resultado é {resultado}")
 
 col1, col2 = st.columns(2)
 
-col1.metric("IMC Classificado", resultado["classe"], resultado["delta"], delta_color="off")
-col2.metric("IMC Calculado", round(imc, 2), resultado["delta"], delta_color="off")
+col1.metric("IMC Classificado", resultado["classe"], resultado["delta"], delta_color="inverse")
+col2.metric("IMC Calculado", round(imc, 2), delta_color="off")
 
 
 st.divider()
