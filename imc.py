@@ -52,7 +52,7 @@ if st.button("Calular"):
         }
 
 
-st.code(f"O resultado é {resultado}")
+    st.code(f"O resultado é {resultado}")
 
 col1, col2 = st.columns(2)
 
