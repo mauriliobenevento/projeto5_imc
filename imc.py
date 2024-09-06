@@ -15,6 +15,9 @@ with st.sidebar:
 
     st. write("É utilizado como uma medida de saúde geral e para determinar se uma pessoa está em um peso ideal.")
 
+    st.divider()
+    st.write("Python com Streamlit by Maurilio Benevento em 06/09/2024")
+
 
 st.title("Calculadora")
 
@@ -64,3 +67,4 @@ col2.metric("IMC Calculado", round(imc, 2), delta_color="off")
 st.divider()
 st.text("fonte:" )
 st.image("./img.png")
+
