@@ -1,5 +1,8 @@
 import streamlit as st
 
+imc = 0
+imc_delta = 0
+
 
 with st.sidebar:
     st.title("Cálculadora IMC")
@@ -18,41 +21,39 @@ st.title("Calculadora")
 peso = st.number_input("Digite o seu peso em kg", min_value=0.0)
 altura = st.number_input("Digite a sua altura em metros", min_value=0.0)
 
-
-
-if st.button("Calular"):
+if st.button("Calcular"):
     imc = peso / (altura ** 2)
     imc_ideal = 21.7
     imc_delta = imc - imc_ideal
 
-    if imc < 18.5:
-        resultado = {
-            "classe": 'Abaixo do peso',
-            "delta": imc_delta
-        }
-    elif imc >= 18.5 and imc < 25:
-        resultado = {
-            "classe": 'Peso ideal',
-            "delta": imc_delta
-        }
-    elif imc >= 25 and imc < 30:
-        resultado = {
-            "classe": 'Sobrepeso',
-            "delta": imc_delta
-        }
-    elif imc >=30 and imc < 35:
-        resultado = {
-            "classe": 'Obesidade',
-            "delta": imc_delta
-        }
-    else:
-        resultado = {
-            "classe": 'Morbida',
-            "delta": imc_delta
-        }
+if imc < 18.5:
+    resultado = {
+        "classe": 'Abaixo do peso',
+        "delta": imc_delta
+    }
+elif imc >= 18.5 and imc < 25:
+    resultado = {
+        "classe": 'Peso ideal',
+        "delta": imc_delta
+    }
+elif imc >= 25 and imc < 30:
+    resultado = {
+        "classe": 'Sobrepeso',
+        "delta": imc_delta
+    }
+elif imc >=30 and imc < 35:
+    resultado = {
+        "classe": 'Obesidade',
+        "delta": imc_delta
+    }
+else:
+    resultado = {
+        "classe": 'Morbida',
+        "delta": imc_delta
+    }
 
 
-    st.write(f"O resultado é {resultado}")
+st.write(f"O resultado é {resultado}")
 
 col1, col2 = st.columns(2)
 
