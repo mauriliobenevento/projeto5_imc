@@ -19,7 +19,7 @@ with st.sidebar:
     st.write("Python com Streamlit by Maurilio Benevento em 06/09/2024")
 
 
-st.title("Calculadora")
+st.title("Calcule o seu IMC")
 
 peso = st.number_input("Digite o seu peso em kg", min_value=0.0)
 altura = st.number_input("Digite a sua altura em metros", min_value=0.0)
