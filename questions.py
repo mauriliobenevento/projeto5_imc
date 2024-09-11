@@ -125,10 +125,11 @@ if disciplina_selecionada:
 
 # Função para registrar as respostas no arquivo CSV
 def registrar_respostas(nome, disciplina, respostas, perguntas):
-    if not os.path.exists("respostas.csv") or os.path.getsize("respostas.csv") == 0:
+    file_path = "respostas.csv"
+    if not os.path.exists(file_path) or os.path.getsize(file_path) == 0:
         df = pd.DataFrame(columns=["Nome", "Disciplina", "Pergunta", "Resposta", "Correta"])
     else:
-        df = pd.read_csv("respostas.csv")
+        df = pd.read_csv(file_path)
 
     novas_respostas = []
     for i, pergunta in enumerate(perguntas):
@@ -142,7 +143,7 @@ def registrar_respostas(nome, disciplina, respostas, perguntas):
         })
 
     df = pd.concat([df, pd.DataFrame(novas_respostas)], ignore_index=True)
-    df.to_csv("respostas.csv", index=False)
+    df.to_csv(file_path, index=False)
 
 # Botão para enviar respostas
 if st.button("Enviar Respostas"):
