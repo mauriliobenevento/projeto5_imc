@@ -1,13 +1,5 @@
 Nome,Disciplina,Pergunta,Resposta,Correta
-Maurilio,Pensamento Computacional,Qual é a primeira etapa do pensamento computacional? (Ordem adotada pelo professor),Decomposição,False
-Maurilio,Pensamento Computacional,Qual é a segunda etapa do pensamento computacional? (Ordem adotada pelo professor),Abstração,False
-Maurilio,Pensamento Computacional,Qual é a terceira etapa do pensamento computacional? (Ordem adotada pelo professor),Abstração,False
-Maurilio,Pensamento Computacional,Qual é a quarta etapa do pensamento computacional? (Ordem adotada pelo professor),Abstração,False
-Maurilio,Pensamento Computacional,Qual é a primeira etapa do pensamento computacional? (Ordem adotada pelo professor),Abstração,True
-Maurilio,Pensamento Computacional,Qual é a segunda etapa do pensamento computacional? (Ordem adotada pelo professor),Decomposição,True
-Maurilio,Pensamento Computacional,Qual é a terceira etapa do pensamento computacional? (Ordem adotada pelo professor),Reconhecimento de padrões,True
-Maurilio,Pensamento Computacional,Qual é a quarta etapa do pensamento computacional? (Ordem adotada pelo professor),Algoritmos,True
-Maurilio,Sistemas Operacionais,Qual é a função principal de um sistema operacional?,Gerenciar hardware,True
-Maurilio,Sistemas Operacionais,Qual é um exemplo de sistema operacional?,Microsoft Word,False
-Maurilio,Sistemas Operacionais,Qual sistema operacional é conhecido por sua interface gráfica de usuário?,Windows,True
-Maurilio,Sistemas Operacionais,Qual sistema operacional é amplamente utilizado em servidores?,Windows,False
+Joaquim,Pensamento Computacional,Qual é a primeira etapa do pensamento computacional? (Ordem adotada pelo professor),Abstração,True
+Joaquim,Pensamento Computacional,Qual é a segunda etapa do pensamento computacional? (Ordem adotada pelo professor),Abstração,False
+Joaquim,Pensamento Computacional,Qual é a terceira etapa do pensamento computacional? (Ordem adotada pelo professor),Abstração,False
+Joaquim,Pensamento Computacional,Qual é a quarta etapa do pensamento computacional? (Ordem adotada pelo professor),Abstração,False
